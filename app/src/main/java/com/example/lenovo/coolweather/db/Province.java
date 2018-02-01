@@ -4,10 +4,11 @@ import org.litepal.crud.DataSupport;
 
 /**
  * Coder : chenshuaiyu
- * Time : 2018/1/30 18:40
+ * Time : 2018/2/1 10:31
  */
 
 public class Province extends DataSupport {
+
     private int id;
     private String provinceName;
     private int provinceCode;
