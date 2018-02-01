@@ -1,6 +1,8 @@
 package com.example.lenovo.coolweather.util;
 
 import android.text.TextUtils;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.example.lenovo.coolweather.db.City;
 import com.example.lenovo.coolweather.db.County;
@@ -18,6 +20,9 @@ import org.json.JSONObject;
  */
 
 public class Utility {
+
+    private static final String TAG = "Utility";
+
     /**
      *解析和处理服务器返回的省级数据
      */
@@ -32,11 +37,13 @@ public class Utility {
                     province.setProvinceCode(provinceObject.getInt("id"));
                     province.save();
                 }
+                Log.d(TAG, "handleProvinceResponse: true");
                 return true;
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
+        Log.d(TAG, "handleProvinceResponse: false");
         return false;
     }
 
