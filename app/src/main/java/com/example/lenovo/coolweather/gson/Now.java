@@ -15,7 +15,7 @@ public class Now {
     @SerializedName("cond")
     public More more;
 
-    public class More{
+    public class More {
         @SerializedName("txt")
         public String info;
     }

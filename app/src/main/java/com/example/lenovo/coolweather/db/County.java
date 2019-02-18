@@ -7,7 +7,7 @@ import org.litepal.crud.DataSupport;
  * Time : 2018/1/30 18:42
  */
 
-public class County extends DataSupport{
+public class County extends DataSupport {
 
     private int id;
     private String countyName;
